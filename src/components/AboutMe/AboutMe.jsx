@@ -1,18 +1,17 @@
 import React from 'react';
 import {Grid, Segment, Menu, Image, Header, Container} from 'semantic-ui-react'
 import { HashLink } from 'react-router-hash-link';
+import './AboutMe.css'
 
 
 const AboutMe = () => {
     <>
-        <Divider horizontal>
-            <Header as='h4'>
-                <Icon name='tag' /> Description
-            </Header>
-        </Divider>
+       
+        <h3>About</h3>
 
-         <p>
-             Doggie treats are good for all times of the year. Proven to be eaten by 99.9% of all dogs worldwide.
-         </p>
+       
+       
     </>
 }
+
+export default AboutMe
