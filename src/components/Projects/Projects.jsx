@@ -2,14 +2,16 @@ import React from 'react';
 import {Grid, Segment, Menu, Image, Header, Container} from 'semantic-ui-react'
 import { HashLink } from 'react-router-hash-link';
 
-const TechSkills = () => {
+const Projects = () => {
+    return (
     <>
-       <Segment id='techskills' color='black'>
-        <h3>Skils</h3>
+       <Segment id='projects' color='black'>
+        <h3>Projects</h3>
 
        </Segment>
        
     </>
+    )
 }
 
-export default TechSkills
+export default Projects

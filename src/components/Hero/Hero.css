@@ -1,0 +1,13 @@
+.hero-img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.hero-container {
+    margin-top: 1vmin;
+    padding-right: 0%;
+    padding-left: 0%;
+  
+}

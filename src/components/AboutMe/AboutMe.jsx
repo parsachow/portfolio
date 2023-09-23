@@ -5,13 +5,15 @@ import './AboutMe.css'
 
 
 const AboutMe = () => {
-    <>
-       
-        <h3>About</h3>
-
-       
-       
-    </>
+    return (
+        <>
+           <Segment id='about' color='black'>
+            <h3>About</h3>
+    
+           </Segment>
+           
+        </>
+        )
 }
 
 export default AboutMe

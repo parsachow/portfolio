@@ -1,17 +1,3 @@
-/* .footer-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: black;
-    color: rgb(247, 247, 247);
-    position: absolute;
-    bottom: 0%;
-    height: 5vmin;
-    width: 100%;
-    
-}
-
- */
 
  footer {
     position: fixed;

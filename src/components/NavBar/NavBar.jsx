@@ -3,6 +3,7 @@ import { Menu, Image, Container, Icon} from 'semantic-ui-react'
 import { HashLink } from 'react-router-hash-link';
 import "./NavBar.css"
 
+
 const NavBar = () => (
 
     <div>
@@ -42,6 +43,7 @@ const NavBar = () => (
             </Container>
 
         </Menu>
+        
     </div>
 
 )

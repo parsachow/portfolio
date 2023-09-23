@@ -9,7 +9,7 @@ const Footer = () => {
             <Segment inverted vertical style={{ backgroundColor: 'black', color: 'white', padding: '2em 0em' }}>
             <Container textAlign='center'>
             <Grid divided inverted stackable style={{color: 'white'}}> 
-                  <Grid.Column width={2}>
+                  <Grid.Column width={8}>
                   <Header inverted as='h4' content='Connect' />
                   <span>
 
@@ -23,7 +23,7 @@ const Footer = () => {
                    </span>
                    </Grid.Column>
                    
-                   <Grid.Column width={2} floated="right">
+                   <Grid.Column width={8}>
                    <Header inverted as='h4' content='Resume' />
                    <Menu.Item href="https://docs.google.com/document/d/1DLHsU2YZ5oRGxP5Nb1C1z1O-RiqwEyUwSl8OmXsFvDg/edit">
                         <Icon name="file pdf" aria-label="resume-pdf" size="big" inverted color="grey"></Icon>
