@@ -1,13 +1,15 @@
 import React from 'react';
 import {Divider, Grid, Segment, Menu, Image, Header, Container} from 'semantic-ui-react'
-import { HashLink } from 'react-router-hash-link';
+import { projects } from '../../assets/projectData/data';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 const Projects = () => {
     return (
     <>
         <Divider horizontal>Projects</Divider>
-        <Segment id='projects' color='black'>
+        <Segment basic id='projects'>
         
+        <ProjectCard />
 
        </Segment>
        

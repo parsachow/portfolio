@@ -15,20 +15,20 @@ const NavBar = () => (
             </Menu.Item>
 
             <HashLink smooth to="#about"> 
-            <Menu.Item  style={{ marginTop: '1em'}} id="NavMains">
+            <Menu.Item  style={{ marginTop: '1em'}}>
                 About
             </Menu.Item>
             </HashLink> 
 
             <HashLink smooth to="#projects"> 
-            <Menu.Item style={{ marginTop: '1em'}} id="NavMains">
+            <Menu.Item style={{ marginTop: '1em'}}>
                 Projects
             </Menu.Item>
             </HashLink>
 
             <HashLink smooth to="#tech">
             <Menu.Item style={{ marginTop: '1em'}} className="NavMains">
-                Skills
+                Tech
             </Menu.Item>
             </HashLink>
             

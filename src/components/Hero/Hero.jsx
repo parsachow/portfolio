@@ -12,13 +12,11 @@ const Hero = () => {
                 />
             <CardImgOverlay>
                 <br />
+                <br />
+                <br />
             <CardTitle tag="h2">
                  Welcome to My Portfolio
             </CardTitle>
-            <br />
-             <CardText>
-              Software Development meets Environmental Sustainability
-            </CardText>
             </CardImgOverlay>
         </Card>
         </Container>

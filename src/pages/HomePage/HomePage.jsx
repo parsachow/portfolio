@@ -4,6 +4,7 @@ import AboutMe from '../../components/AboutMe/AboutMe'
 import Projects from "../../components/Projects/Projects"
 import TechSkills from "../../components/TechSkills/TechSkills"
 import Hero from "../../components/Hero/Hero"
+import { HashLink } from "react-router-hash-link"
 
 export default function HomePage(){
     return (
@@ -14,8 +15,8 @@ export default function HomePage(){
         <br />
         <Hero />
         <AboutMe />
-        <Projects />
         <TechSkills />
+        <Projects />
         <Footer />
         </>
     )

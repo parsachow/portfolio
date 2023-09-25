@@ -1,7 +1,7 @@
 import './App.css'
-import { HashLink as Link } from 'react-router-hash-link';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from "./pages/HomePage/HomePage";
+import NavBar from './components/NavBar/NavBar';
 
 
 
@@ -10,9 +10,10 @@ function App() {
 
   return (
     <>
-    
-     <HomePage />
-    
+    <Routes>
+     <Route path='/' element={<HomePage />} />
+     
+    </Routes>
     </>
   )
 }
