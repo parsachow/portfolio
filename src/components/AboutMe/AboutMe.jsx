@@ -1,16 +1,16 @@
 import React from 'react';
 import {Divider, Segment, Item,} from 'semantic-ui-react'
-import { HashLink } from 'react-router-hash-link';
+
 import './AboutMe.css'
 
 
 const AboutMe = () => {
     return (
-        <>
+        <div id='about'>
          <Divider horizontal className='divider-about' >About Me</Divider>
 
-            <Segment basic>
-            <div className='about-main' id='about'>   
+            <Segment basic >
+            <div className='about-main' >   
                 <div className='pic-container'>
                     <img src='https://i.imgur.com/1jYVCOS.jpg' className='pic'></img>
                 </div>
@@ -22,7 +22,7 @@ const AboutMe = () => {
             </div> 
            </Segment>
            
-        </>
+        </div>
     )
 }
 

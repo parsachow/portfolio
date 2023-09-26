@@ -7,7 +7,7 @@ import "./NavBar.css"
 const NavBar = () => (
 
     <div>
-        <Menu fixed='top' inverted style={{ backgroundColor: 'black' }}>
+        <Menu fixed='top' inverted style={{ backgroundColor: 'black' }} id='navbar'>
             <Container textAlign='left'>
               
             <Menu.Item  header id="NavMains">

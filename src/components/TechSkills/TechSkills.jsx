@@ -4,8 +4,8 @@ import {List, Segment, Image, Divider, Grid,} from 'semantic-ui-react'
 
 const TechSkills = () => {
     return(
-    <>
-    <Divider horizontal>Tech Stacks</Divider>
+    <div id='tech'>
+    <Divider horizontal >Tech Stacks</Divider>
     <Segment basic style={{padding: '2em'}}>
         <Grid columns={6} divided>
             <Grid.Row>
@@ -131,7 +131,7 @@ const TechSkills = () => {
                 </List>
             </Grid.Column>            
             </Grid.Row>
-            
+
             <Grid.Row>
             <Grid.Column>
                 <List animated verticalAlign='middle'style={{paddingTop: '5px'}}>
@@ -198,7 +198,7 @@ const TechSkills = () => {
 
     </Segment>
        
-    </>
+    </div>
     )
 }
 
