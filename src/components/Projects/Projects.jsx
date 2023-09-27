@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import {Divider, Grid, Segment, Menu, Image, Header, Container} from 'semantic-ui-react'
+import {Divider, Segment, } from 'semantic-ui-react'
 import ProjectCard from '../ProjectCard/ProjectCard';
+
+
 
 export default function Projects() {
 
@@ -52,17 +54,20 @@ export default function Projects() {
         }
     ])
     
+   
     const projectCards = projects.map((projectItem, idx) =>{
         return <ProjectCard project={projectItem} key={idx} />
     })
-    console.log(projectCards)
+    
+    
 
 
     return (
     <div id='projects'>
         <Divider horizontal>Projects</Divider>
-        <Segment basic >
-             {projectCards}
+        <Segment basic style={{marginBottom: '1em'}}>
+            {projectCards} 
+            
        </Segment>
        
     </div>

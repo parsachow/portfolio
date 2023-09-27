@@ -1,12 +1,11 @@
-.hero-img {
-    height: 270px;
-    width: 100%;
-    object-fit: cover;
-    
-}
+/* .welcome-col {
+    height: 30em;
+    width: 30em;
+} */
 
 .hero-container {
     padding-right: 0%;
     padding-left: 0%;
+    
   
 }

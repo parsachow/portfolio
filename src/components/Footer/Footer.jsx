@@ -7,7 +7,7 @@ const Footer = () => {
     return (
       <footer>
             <Segment inverted vertical style={{ backgroundColor: 'black', color: 'white', padding: '0em 0em', }}>
-            <Container textAlign='center'>
+            <Container textAlign='center' style={{paddingBottom: '1em',}}>
             <Grid divided inverted stackable style={{height: '7vmin'}}> 
                   <Grid.Column width={8}>
                   <Header inverted as='h4' content='Connect' />

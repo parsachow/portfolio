@@ -10,9 +10,7 @@ export default function HomePage(){
     return (
         <>
         <NavBar />
-        <br />
-        <br />
-        <br />
+        
         <Hero />
         <AboutMe />
         <TechSkills />

@@ -1,12 +1,14 @@
 import React from 'react';
-import { Menu, Image, Container, Icon} from 'semantic-ui-react'
 import { HashLink } from 'react-router-hash-link';
 import "./NavBar.css"
+import { Menu, Container, Icon, Image, Item } from 'semantic-ui-react';
+
+
 
 
 const NavBar = () => (
 
-    <div>
+    <>  
         <Menu fixed='top' inverted style={{ backgroundColor: 'black' }} id='navbar'>
             <Container textAlign='left'>
               
@@ -27,7 +29,7 @@ const NavBar = () => (
             </HashLink>
 
             <HashLink smooth to="#tech">
-            <Menu.Item style={{ marginTop: '1em'}} className="NavMains">
+            <Menu.Item style={{ marginTop: '1em'}} className="NavMains" >
                 Tech
             </Menu.Item>
             </HashLink>
@@ -43,9 +45,11 @@ const NavBar = () => (
             </Container>
 
         </Menu>
-        
-    </div>
+        <div>
 
+        </div>
+    
+</>
 )
 
 export default NavBar

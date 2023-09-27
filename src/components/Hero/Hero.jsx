@@ -1,24 +1,23 @@
 import React from "react"
-import { Container, Card, CardImg, CardTitle, CardText, CardImgOverlay } from "reactstrap"
+import { Container, Fade, Stack} from "reactstrap";
 import './Hero.css'
+import Lottie from "lottie-react"
+import hero from '../../assets/hero.json'
+
+
 
 const Hero = () => {
     return (
        <div>
-        <Container fluid className="hero-container">
-        <Card inverse className="text-center">
-            <CardImg className="hero-img"
-                src="https://i.imgur.com/6vSIjeb.jpg"
-                />
-            <CardImgOverlay>
-                <br />
-                <br />
-                <br />
-            <CardTitle tag="h2">
-                 Welcome to My Portfolio
-            </CardTitle>
-            </CardImgOverlay>
-        </Card>
+        <Container className="hero-container">
+            <Stack direction='horizontal' gap={2}>
+                <div><Lottie animationData={hero} loop={true} /></div>
+                <Fade in={true}>
+                <div className="text-center">
+                    <h2>Welcome to my Portfolio</h2> 
+                </div>  
+                </Fade>
+            </Stack>
         </Container>
         </div>
     )

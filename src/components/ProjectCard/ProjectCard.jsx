@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardLink, CardSubtitle, CardText } from "reactstrap";
-import Projects from "../Projects/Projects";
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button, } from "reactstrap";
+
+
 
 
 export default function ProjectCard({ project }) {
@@ -8,14 +9,14 @@ export default function ProjectCard({ project }) {
 
     return(
         <>
-        <Card 
+        <Card className='text-center'
             style={{width: '18rem'}}>
             <CardBody>
                 <CardTitle tag="h5" >
                 {project.title}
                 </CardTitle>
             </CardBody>
-                <img alt="Card cap" src={project.image} width="100%"/>
+                <img alt="project-screenshot" src={project.image} width="100%"/>
             <CardBody>
             <CardText>
             {project.description}
@@ -25,14 +26,16 @@ export default function ProjectCard({ project }) {
               tag="h6" >
                  Tech: {project.techs.join(', ')}
                 </CardSubtitle>
-            <CardLink href={project.github}>
-                  code
-            </CardLink>
             
-            {(project.liveSite === '') ? 'site coming soon':
-                <CardLink href={project.liveSite}>site</CardLink>}
+                <Button href={project.github} size='sm' style={{marginRight: '2em' }}>code</Button>
+                
+                
+                {(project.liveSite === '') ? 'site coming soon':
+                <Button href={project.liveSite} size='sm'>site</Button>}
+            
             </CardBody>
         </Card>
+        
         </>
     )
 }
