@@ -1,5 +1,8 @@
 import React from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button, } from "reactstrap";
+// import { Card, CardBody, CardTitle, CardSubtitle, CardText, Button,} from "reactstrap";
+import { Grid, Card, Button, Image, Icon } from "semantic-ui-react";
+import '../ProjectCard/ProjectCard.css'
+
 
 
 
@@ -9,33 +12,40 @@ export default function ProjectCard({ project }) {
 
     return(
         <>
-        <Card className='text-center'
-            style={{width: '18rem'}}>
-            <CardBody>
-                <CardTitle tag="h5" >
-                {project.title}
-                </CardTitle>
-            </CardBody>
-                <img alt="project-screenshot" src={project.image} width="100%"/>
-            <CardBody>
-            <CardText>
-            {project.description}
-            </CardText>
-            <CardSubtitle
-              className="mb-2 text-muted"
-              tag="h6" >
-                 Tech: {project.techs.join(', ')}
-                </CardSubtitle>
-            
-                <Button href={project.github} size='sm' style={{marginRight: '2em' }}>code</Button>
+            <Card style={{marginLeft: '2em', marginTop: '1em'}}>
+            <Card.Header as='h4' textAlign="center" style={{marginTop: '1em'}}>{project.title} </Card.Header>
+            <Image src={project.image} wrapped ui={false} />
+            <Card.Content style={{padding: '2em'}}>
+            <Card.Description textAlign="center">
+              {project.description}
+            </Card.Description>
+             <Card.Meta>Tech: {project.techs.join(', ')}</Card.Meta>
+            </Card.Content>
+            <Card.Content extra>
+            <div className="buttons">
+                <div>
+                 <Button  color="yellow" href={project.github} target="_blank" animated='vertical'>
+                <Button.Content hidden>code</Button.Content>
+                 <Button.Content visible>
+                <Icon name='github alternate' />
+                </Button.Content>
+                </Button>
+                </div>
                 
-                
+                <div>
                 {(project.liveSite === '') ? 'site coming soon':
-                <Button href={project.liveSite} size='sm'>site</Button>}
-            
-            </CardBody>
-        </Card>
-        
+                <Button  color="yellow" href={project.liveSite} target="_blank" animated='vertical'>
+                <Button.Content hidden>site</Button.Content>
+                 <Button.Content visible>
+                <Icon name='computer' />
+                </Button.Content>
+                </Button>}
+                </div>
+                
+            </div>
+            </Card.Content>
+         </Card>
+
         </>
     )
 }

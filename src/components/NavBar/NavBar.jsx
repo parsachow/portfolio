@@ -1,20 +1,25 @@
-import React from 'react';
+import React  from 'react';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import "./NavBar.css"
 import { Menu, Container, Icon, Image, Item } from 'semantic-ui-react';
 
 
 
+export default function Navbar(){
 
-const NavBar = () => (
 
-    <>  
+    return (
+
+        <>  
         <Menu fixed='top' inverted style={{ backgroundColor: 'black' }} id='navbar'>
             <Container textAlign='left'>
               
+            <Link to='/'> 
             <Menu.Item  header id="NavMains">
                  <Image size='small' src='https://i.imgur.com/VMzyiqd.png' position='left'/>
             </Menu.Item>
+            </Link> 
 
             <HashLink smooth to="#about"> 
             <Menu.Item  style={{ marginTop: '1em'}}>
@@ -45,12 +50,9 @@ const NavBar = () => (
             </Container>
 
         </Menu>
-        <div>
-
-        </div>
     
 </>
-)
 
-export default NavBar
+    )
+}
 

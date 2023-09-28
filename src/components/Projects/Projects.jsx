@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
-import {Divider, Segment, Card, CardGroup } from 'semantic-ui-react'
+import { Divider, Segment, Card, Grid, Transition } from 'semantic-ui-react';
 import ProjectCard from '../ProjectCard/ProjectCard';
-
+import { Swiper, SwiperSlide}  from 'swiper/react';
+import { Autoplay, Navigation, Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 
 export default function Projects() {
@@ -17,11 +22,11 @@ export default function Projects() {
     
         },
         {
-            title: "Novel's Archive",
-            description: 'An archive where OAuth login is required to store various information about books',
-            techs: ["MongoDB", "Express", "Node.js", "Javascript", "EJS", "HTML5", "CSS3"],
-            image: 'https://i.imgur.com/MJl7mkN.png',
-            github: 'https://github.com/parsachow/Project-2',
+            title: 'Cafe Normalé',
+            description: 'A cross functional team endeavor to create an accessible food delivery app for visually impaired people.',
+            techs: ["MongoDB", "Express", "React", "Node.js", "Javascript", "HTML5", "CSS3"],
+            image: 'https://i.imgur.com/oFftMyf.png',
+            github: 'https://github.com/parsachow/ga-mini-hackathon',
             liveSite: '',
     
         },
@@ -35,6 +40,15 @@ export default function Projects() {
     
         },
         {
+            title: "Novel's Archive",
+            description: 'An archive where OAuth login is required to store various information about books',
+            techs: ["MongoDB", "Express", "Node.js", "Javascript", "EJS", "HTML5", "CSS3"],
+            image: 'https://i.imgur.com/wYRrcE1.png',
+            github: 'https://github.com/parsachow/Project-2',
+            liveSite: '',
+    
+        },
+        {
             title: 'Hangman',
             description: 'Browser based game where players guess movie names before lives run out',
             techs: ["HTML5", "CSS3", "JavaScript"],
@@ -43,32 +57,28 @@ export default function Projects() {
             liveSite: 'https://parsachow.github.io/Hangman/',
     
         },
-        {
-            title: 'Cafe Normalé',
-            description: 'A cross functional team endeavor to create an accessible food delivery app for visually impaired people.',
-            techs: ["MongoDB", "Express", "React", "Node.js", "Javascript", "HTML5", "CSS3"],
-            image: 'https://i.imgur.com/oFftMyf.png',
-            github: 'https://github.com/parsachow/ga-mini-hackathon',
-            liveSite: '',
-    
-        }
+       
     ])
     
    
-    const projectCards = projects.map((projectItem, idx) =>{
-        return <ProjectCard project={projectItem} key={idx} />
-    })
-    
-    
-
-
     return (
     <div id='projects'>
         <Divider horizontal>Projects</Divider>
-        <Segment basic style={{marginBottom: '1em'}} >
-            <Card.Group itemsPerRow={1}>
-            {projectCards} 
-            </Card.Group>
+        <Segment basic style={{marginBottom: '1em', marginLeft: '30vmin', marginRight: '30vmin'}} >
+
+            <Swiper modules={[Navigation, Pagination, Autoplay]} slidesPerView={1} navigation pagination={{ clickable: true }} loop={true} autoplay={true} speed={1000} style={{width: '400px', height: '520px', paddingLeft: '2em'}}>
+                
+                 {projects.map((projectItem, idx) =>{
+                 return (
+                 <SwiperSlide >
+                 <ProjectCard project={projectItem} key={idx} />
+                 </SwiperSlide>
+                 )
+                  })}
+                
+          
+            </Swiper>
+        <br />
         </Segment>
        
     </div>
