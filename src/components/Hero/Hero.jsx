@@ -1,24 +1,25 @@
 import React from "react"
-import { Container, Fade, Stack} from "reactstrap";
+import { Container, Fade} from "reactstrap";
 import './Hero.css'
 import Lottie from "lottie-react"
 import hero from '../../assets/hero.json'
+import { Transition } from "semantic-ui-react";
+import welcome from '../../assets/welcome.json'
+
 
 
 
 const Hero = () => {
     return (
-       <div>
-        <Container className="hero-container">
-            <Stack direction='horizontal' gap={2}>
-                <div><Lottie animationData={hero} loop={true} /></div>
-                <Fade in={true}>
-                <div className="text-center">
-                    <h2>Welcome to my Portfolio</h2> 
-                </div>  
-                </Fade>
-            </Stack>
-        </Container>
+       <div className="main-hero-div">
+            <div>
+                <Lottie animationData={hero} loop={true} />
+            </div>
+            <Fade in={true}>
+            <div className="welcome-div">
+                <Lottie animationData={welcome} loop={true}/>
+            </div>  
+            </Fade>
         </div>
     )
 }

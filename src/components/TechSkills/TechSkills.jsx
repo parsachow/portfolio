@@ -1,12 +1,13 @@
 import React from 'react';
 import {List, Segment, Image, Divider, Grid,} from 'semantic-ui-react'
-
+import '../TechSkills/TechSkills.css'
 
 const TechSkills = () => {
     return(
     <div id='tech'>
     <Divider horizontal >Tech Stacks</Divider>
-    <Segment basic style={{padding: '2em'}}>
+    <br />
+    <Segment basic id='tech-segment'>
         <Grid columns={6} divided>
             <Grid.Row>
             <Grid.Column>
@@ -195,6 +196,8 @@ const TechSkills = () => {
             </Grid.Column>
             </Grid.Row>
         </Grid>
+        <br />
+        <br />
 
     </Segment>
        

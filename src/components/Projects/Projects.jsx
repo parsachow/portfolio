@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {Divider, Segment, } from 'semantic-ui-react'
+import {Divider, Segment, Card, CardGroup } from 'semantic-ui-react'
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 
@@ -65,10 +65,11 @@ export default function Projects() {
     return (
     <div id='projects'>
         <Divider horizontal>Projects</Divider>
-        <Segment basic style={{marginBottom: '1em'}}>
+        <Segment basic style={{marginBottom: '1em'}} >
+            <Card.Group itemsPerRow={1}>
             {projectCards} 
-            
-       </Segment>
+            </Card.Group>
+        </Segment>
        
     </div>
     )

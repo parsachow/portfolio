@@ -1,11 +1,18 @@
-/* .welcome-col {
-    height: 30em;
-    width: 30em;
-} */
+.main-hero-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
 
 .hero-container {
     padding-right: 0%;
     padding-left: 0%;
     
   
+}
+
+.welcome-div {
+   margin-top: 25em;
+
 }

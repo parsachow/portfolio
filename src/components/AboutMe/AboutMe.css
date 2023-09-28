@@ -5,12 +5,15 @@ h3 {
 .about-main {
     display: flex;
     flex-direction: row;
+    margin-left: 25vmin;
+    margin-right: 25vmin;
+
 }
 
 .pic {
     border-radius: 50%;
-    width: 25vmin;
-    height: 25vmin;   
+    width: 35vmin;
+    height: 35vmin;   
     
 }
 
