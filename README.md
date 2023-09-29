@@ -7,5 +7,5 @@ This is my Portfolio showcasing my projects and skills.
 **React, Semantic, ReactStrap, Swiper, Lottie**
 
 ## Screenshots:
-https://i.imgur.com/1ixvsLR.png
+![Home Page] (https://i.imgur.com/1ixvsLR.png)
 
